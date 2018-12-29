@@ -11,6 +11,7 @@ public class Admin extends User {
 		System.out.println(name + ", admin");
 
 	}
+	
 	public static Admin find(List<User> users, String name) {
 		for(User user: users) {
 				if (user instanceof Admin && user.name == name) {
